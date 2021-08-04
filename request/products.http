@@ -1,0 +1,33 @@
+@url = http://localhost:3000/
+
+### hello world
+GET {{url}}
+
+### get products
+GET {{url}}products
+
+### get product by id
+GET {{url}}products/3
+
+### post products
+POST {{url}}products
+Content-Type: application/json
+
+{
+  "name": "Fanta",
+  "description": "500 ml",
+  "available": false
+}
+
+### delete product
+DELETE {{url}}products/1
+
+### update product
+PUT {{url}}products/1
+Content-Type: application/json
+
+{
+  "name": "Vera Ipa",
+  "description": "500 ml",
+  "available": true
+}
